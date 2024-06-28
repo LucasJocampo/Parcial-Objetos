@@ -1,5 +1,5 @@
 # Parcial-Objetos
-#Harry Botter
+# Harry Botter
 
 Queremos modelar el universo de Harry Botter, un joven robot de habilidades que parecen mágicas, que asiste a la Escuela Hogwart de robótica y hechicería, donde encuentra compañeros, profesores y todo tipo de criaturas bóticas.
 
