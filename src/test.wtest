@@ -1,0 +1,24 @@
+
+import example.*
+
+test "Creo estudiantes, profesor y materia" {
+	//Punto 1
+	var Sombrero = new SombreroSeleccionador(cargaElectrica= 60, tipoAceite="Puro")
+	var estu = new Estudiante(cargaElectrica=10,tipoAceite= "Puro")
+	var snake = new Profesor(cargaElectrica=10,tipoAceite= "Puro")
+	var uke = new Estudiante(cargaElectrica=60,tipoAceite= "Sucio")
+	Sombrero.asignarCasa(estu)
+	Sombrero.asignarCasa(snake)
+	Sombrero.asignarCasa(uke)
+	var Inmobilus = new Inmobilus()
+	//Punto 2
+	
+	var materiaP= new Materia(profesor=snake, hechizoEnsenia=Inmobilus)
+
+	//Punto 3
+	estu.irClase(materiaP)
+	//Punto 4
+	estu.lanzarHechizo(Inmobilus,uke)
+	assert.equals(10, uke.cargaElectrica())
+	
+}
